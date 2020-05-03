@@ -28,9 +28,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrK-8o-swX">
                                         <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
                                         <state key="normal" title="戻る"/>
-                                        <connections>
-                                            <action selector="returnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZx-er-xid"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHM-Og-GrS">
                                         <rect key="frame" x="134" y="0.0" width="31" height="30"/>
@@ -60,6 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="firstView" destination="C1f-EK-j8d" id="XfN-DD-NZV"/>
+                        <outlet property="resumeButtonElement" destination="jHM-Og-GrS" id="gby-j5-rp5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
