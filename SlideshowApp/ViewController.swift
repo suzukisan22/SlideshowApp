@@ -87,5 +87,8 @@ class ViewController: UIViewController {
       let expandPhotoViewController:ExpandPhotoViewController = segue.destination as! ExpandPhotoViewController
       expandPhotoViewController.imageTitle = imageNameArray[displayImageNumber]
   }
+  
+  @IBAction func unwind(_ segue: UIStoryboardSegue) {
+  }
 }
 

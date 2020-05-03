@@ -85,11 +85,20 @@
                                     <constraint firstAttribute="height" constant="180" id="WHo-eN-F2b"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-Ob-0mz">
+                                <rect key="frame" x="15" y="15" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="PK0-fd-WQp" kind="unwind" unwindAction="unwind:" id="hLn-sd-PJV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="tTu-Ob-0mz" firstAttribute="top" secondItem="ouN-lV-EG8" secondAttribute="top" constant="15" id="8zB-85-LcM"/>
                             <constraint firstItem="Idv-bV-BA0" firstAttribute="centerX" secondItem="oTb-hE-xsd" secondAttribute="centerX" id="ANs-dk-31R"/>
                             <constraint firstItem="Idv-bV-BA0" firstAttribute="top" secondItem="ouN-lV-EG8" secondAttribute="top" constant="100" id="J8F-Fh-E2b"/>
+                            <constraint firstItem="tTu-Ob-0mz" firstAttribute="leading" secondItem="ouN-lV-EG8" secondAttribute="leading" constant="15" id="XuI-Kj-bhi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ouN-lV-EG8"/>
                     </view>
@@ -98,6 +107,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syb-lV-qhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PK0-fd-WQp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="867" y="127"/>
         </scene>
