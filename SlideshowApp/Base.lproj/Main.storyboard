@@ -28,6 +28,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrK-8o-swX">
                                         <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
                                         <state key="normal" title="戻る"/>
+                                        <connections>
+                                            <action selector="returnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcM-v2-yNN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHM-Og-GrS">
                                         <rect key="frame" x="134" y="0.0" width="31" height="30"/>
@@ -60,6 +63,7 @@
                         <outlet property="nextButtonElement" destination="YdZ-7y-g9m" id="IA5-Pf-7cx"/>
                         <outlet property="resumeButtonElement" destination="jHM-Og-GrS" id="gby-j5-rp5"/>
                         <outlet property="returnButtonElement" destination="QrK-8o-swX" id="5Qn-0w-JcK"/>
+                        <segue destination="33i-JM-eO9" kind="presentation" identifier="toExpand" id="JCr-qX-sMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,11 +75,20 @@
             <objects>
                 <viewController id="33i-JM-eO9" customClass="ExpandPhotoViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oTb-hE-xsd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-bV-BA0">
+                                <rect key="frame" x="87" y="130" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ouN-lV-EG8"/>
                     </view>
+                    <connections>
+                        <outlet property="biggerImage" destination="Idv-bV-BA0" id="TJz-Va-cMd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syb-lV-qhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

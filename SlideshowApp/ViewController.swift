@@ -27,6 +27,13 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view.
     
     firstView.image = UIImage(named: imageNameArray[displayImageNumber])
+    firstView.isUserInteractionEnabled = true
+    firstView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.imageViewTapped(_:))))
+  }
+  
+  // 画像がタップされたら呼ばれる
+  @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
+    self.performSegue(withIdentifier: "toExpand", sender: nil)
   }
   
   @IBAction func returnButton(_ sender: Any) {
@@ -76,5 +83,9 @@ class ViewController: UIViewController {
     firstView.image = UIImage(named: imageNameArray[displayImageNumber])
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      let expandPhotoViewController:ExpandPhotoViewController = segue.destination as! ExpandPhotoViewController
+      expandPhotoViewController.imageTitle = imageNameArray[displayImageNumber]
+  }
 }
 
