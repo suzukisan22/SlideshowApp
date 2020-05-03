@@ -15,7 +15,9 @@ class ViewController: UIViewController {
   var displayImageNumber:Int = 0
   
   @IBOutlet weak var resumeButtonElement: UIButton!
-
+  @IBOutlet weak var returnButtonElement: UIButton!
+  @IBOutlet weak var nextButtonElement: UIButton!
+  
   var timer: Timer!
 
   var imageNameArray = ["スライド1枚目", "スライド2枚目", "スライド3枚目"]
@@ -51,10 +53,14 @@ class ViewController: UIViewController {
     if self.timer == nil {
        self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
       resumeButtonElement.setTitle("停止", for: .normal)
+      returnButtonElement.isEnabled = false
+      nextButtonElement.isEnabled = false
     } else {
       resumeButtonElement.setTitle("再生", for: .normal)
       self.timer.invalidate()
       self.timer = nil
+      returnButtonElement.isEnabled = true
+      nextButtonElement.isEnabled = true
     }
   }
   

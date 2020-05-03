@@ -57,7 +57,9 @@
                     </view>
                     <connections>
                         <outlet property="firstView" destination="C1f-EK-j8d" id="XfN-DD-NZV"/>
+                        <outlet property="nextButtonElement" destination="YdZ-7y-g9m" id="IA5-Pf-7cx"/>
                         <outlet property="resumeButtonElement" destination="jHM-Og-GrS" id="gby-j5-rp5"/>
+                        <outlet property="returnButtonElement" destination="QrK-8o-swX" id="5Qn-0w-JcK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
