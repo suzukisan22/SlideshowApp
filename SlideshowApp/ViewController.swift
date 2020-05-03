@@ -33,6 +33,16 @@ class ViewController: UIViewController {
   
   // 画像がタップされたら呼ばれる
   @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
+    
+    // スライドショーが動いていれば、中止する
+    if self.timer != nil {
+      resumeButtonElement.setTitle("再生", for: .normal)
+      self.timer.invalidate()
+      self.timer = nil
+      returnButtonElement.isEnabled = true
+      nextButtonElement.isEnabled = true
+    }
+
     self.performSegue(withIdentifier: "toExpand", sender: nil)
   }
   
