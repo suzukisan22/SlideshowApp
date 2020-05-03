@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5668E5245E797F000FD351 /* ExpandPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5668E4245E797F000FD351 /* ExpandPhotoViewController.swift */; };
 		0A7B6BCD245E731E0048F402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6BCC245E731E0048F402 /* AppDelegate.swift */; };
 		0A7B6BCF245E731E0048F402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6BCE245E731E0048F402 /* SceneDelegate.swift */; };
 		0A7B6BD1245E731E0048F402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6BD0245E731E0048F402 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A5668E4245E797F000FD351 /* ExpandPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandPhotoViewController.swift; sourceTree = "<group>"; };
 		0A7B6BC9245E731E0048F402 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7B6BCC245E731E0048F402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7B6BCE245E731E0048F402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				0A7B6BCC245E731E0048F402 /* AppDelegate.swift */,
 				0A7B6BCE245E731E0048F402 /* SceneDelegate.swift */,
 				0A7B6BD0245E731E0048F402 /* ViewController.swift */,
+				0A5668E4245E797F000FD351 /* ExpandPhotoViewController.swift */,
 				0A7B6BD2245E731E0048F402 /* Main.storyboard */,
 				0A7B6BD5245E73280048F402 /* Assets.xcassets */,
 				0A7B6BD7245E73280048F402 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				0A7B6BD1245E731E0048F402 /* ViewController.swift in Sources */,
 				0A7B6BCD245E731E0048F402 /* AppDelegate.swift in Sources */,
 				0A7B6BCF245E731E0048F402 /* SceneDelegate.swift in Sources */,
+				0A5668E5245E797F000FD351 /* ExpandPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
