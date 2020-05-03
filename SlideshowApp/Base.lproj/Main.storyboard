@@ -16,14 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スライド1枚目" translatesAutoresizingMaskIntoConstraints="NO" id="C1f-EK-j8d">
-                                <rect key="frame" x="57" y="94" width="300" height="250"/>
+                                <rect key="frame" x="82" y="94" width="250" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="3to-DV-ZxY"/>
-                                    <constraint firstAttribute="width" constant="300" id="NS4-fo-Gl1"/>
+                                    <constraint firstAttribute="height" constant="150" id="3to-DV-ZxY"/>
+                                    <constraint firstAttribute="width" constant="250" id="NS4-fo-Gl1"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="prQ-Ba-Zxq">
-                                <rect key="frame" x="57.5" y="394" width="299" height="30"/>
+                                <rect key="frame" x="57.5" y="294" width="299" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrK-8o-swX">
                                         <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
@@ -78,12 +78,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-bV-BA0">
-                                <rect key="frame" x="87" y="130" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-bV-BA0">
+                                <rect key="frame" x="57" y="100" width="300" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1W5-q0-N12"/>
+                                    <constraint firstAttribute="height" constant="180" id="WHo-eN-F2b"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Idv-bV-BA0" firstAttribute="centerX" secondItem="oTb-hE-xsd" secondAttribute="centerX" id="ANs-dk-31R"/>
+                            <constraint firstItem="Idv-bV-BA0" firstAttribute="top" secondItem="ouN-lV-EG8" secondAttribute="top" constant="100" id="J8F-Fh-E2b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ouN-lV-EG8"/>
                     </view>
                     <connections>
