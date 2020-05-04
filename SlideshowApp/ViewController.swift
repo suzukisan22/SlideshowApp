@@ -20,7 +20,7 @@ class ViewController: UIViewController {
   
   var timer: Timer!
 
-  var imageNameArray = ["スライド1枚目", "スライド2枚目", "スライド3枚目"]
+  var imageNameArray = ["slide1", "slide2", "slide3"]
 
   override func viewDidLoad() {
     super.viewDidLoad()
